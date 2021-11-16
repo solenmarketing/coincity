@@ -1,0 +1,53 @@
+header {
+    background-image: url('/assets/img/background-header-coin-city.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 2000px;
+    margin-top: -70px;
+    padding-top: 300px;
+}
+
+h1, h2 {
+    font-size: 48px;
+}
+.cwhite {
+    color: white;
+}
+header p {
+    color: white;
+    line-height: 25px;
+    font-size: 15px;
+}
+header .text-big {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+}
+header .imgHeader {
+    margin-top: -100px;
+}
+header .edificiosHeader {
+    width: 888px;
+    margin-left: -400px;
+    margin-top: -100px;
+}
+.gridWhatIsCC {
+    padding-top: 100px;
+}
+
+.bg-nubes {
+    background-image: url('/assets/img/nubes.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 779px;
+    margin-top: -600px;
+    position: relative;
+    z-index: 1;
+}
+
+section#lands h2 {
+    text-align: center;
+}

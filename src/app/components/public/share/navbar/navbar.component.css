@@ -1,0 +1,17 @@
+.navbar {
+    background-color: transparent;
+}
+.navlinks {
+    font-size: 15px;
+}
+.navlinks a {
+    padding: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+.navlinks a:hover {
+    text-decoration: none;
+}
+.active {
+    color: #EFBD14;
+}
