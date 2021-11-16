@@ -1,5 +1,5 @@
 header {
-    background-image: url('/assets/img/background-header-coin-city.png');
+    background-image: url("/assets/img/background-header-coin-city.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -9,12 +9,13 @@ header {
     padding-top: 300px;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-size: 48px;
 }
 h3 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
 }
 .cwhite {
     color: white;
@@ -42,7 +43,7 @@ header .edificiosHeader {
 }
 
 .bg-nubes {
-    background-image: url('/assets/img/nubes.png');
+    background-image: url("/assets/img/nubes.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,11 +57,11 @@ section {
     padding: 50px 0;
 }
 
-section .title {
+section .mb-150 {
     margin-bottom: 150px;
 }
 section#lands {
-    background-image: url('/assets/img/bg-blue.png');
+    background-image: url("/assets/img/bg-blue.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -70,7 +71,7 @@ section#lands h2 {
 }
 
 .nubeTransparente {
-    background-image: url('/assets/img/nubes-2.png');
+    background-image: url("/assets/img/nubes-2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,7 +79,7 @@ section#lands h2 {
     width: 100%;
 }
 .nubesBlancas {
-    background-image: url('/assets/img/nubesBlancas.png');
+    background-image: url("/assets/img/nubesBlancas.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -91,4 +92,76 @@ section#lands h2 {
 
 .rowMTNegative-400 {
     margin-top: -400px;
+}
+
+.cardModalidad {
+    box-shadow: 0px 0px 40px 4px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    min-height: 450px;
+    transform: translateY(0);
+    transition: all .2s ease-in;
+}
+
+.cardModalidad:hover {
+    transform: translateY(-25px);
+    box-shadow: 0px 0px 40px 4px rgb(0 0 0 / 15%);
+}
+
+.cardModalidad h4 {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 8px 0;
+}
+
+.listNumber {
+    list-style-type: number;
+}
+
+.gridMonedaCity {
+    margin: 100px 0;
+}
+
+.monedaCity {
+    margin-left: auto;
+}
+.monedaMony {
+    margin-right: auto;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  to {
+    -ms-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 5s linear infinite;
+  -moz-animation: rotating 5s linear infinite;
+  -ms-animation: rotating 5s linear infinite;
+  -o-animation: rotating 5s linear infinite;
+  animation: rotating 5s linear infinite;
 }
