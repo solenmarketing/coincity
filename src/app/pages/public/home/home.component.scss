@@ -130,6 +130,42 @@ section#lands h2 {
     margin-right: auto;
 }
 
+.modal-body h5 {
+    font-size: 25px;
+    line-height: 30px;
+}
+.modal-body h5 span {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+}
+.modal-body p span {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.modal-body .badge {
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 15px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+}
+.modal-body .badge.orange {
+    background-color: #F2994A;
+}
+.modal-body .badge.yellow {
+    background-color: #E4B72E;
+}
+.modal-body .badge.red {
+    background-color: #EB5757;
+}
+.modal-body .badge.green {
+    background-color: #6FCF97;
+}
+
 @-webkit-keyframes rotating /* Safari and Chrome */ {
   from {
     -webkit-transform: rotateY(0deg);

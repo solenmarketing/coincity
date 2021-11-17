@@ -306,10 +306,64 @@
 
     <div class="row my-5">
       <div class="col-12 col-md-4 offset-md-4">
-        <button mat-raised-button color="warn" class="w-100">RANGO DE CONVERSIÓN</button>
+        <button (click)="open(content)" mat-raised-button color="warn" class="w-100">RANGO DE CONVERSIÓN</button>
       </div>
     </div>
   </div>
 </section>
+
+
+<ng-template #content let-modal>
+  <div class="modal-header pb-0" style="border:none">
+    <h3 class="modal-title" id="modal-basic-title">Rango de conversión</h3>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <mat-icon>clear</mat-icon>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="d-flex flex-row align-items-center mb-3">
+      <img class="mr-3" src="/assets/img/city-to-mony.png" alt="city-to-mony">
+      <h5 class="m-0"><span>$City a Mony:</span> 1 $CITY = 100 Mony</h5>
+    </div>
+    <div class="d-flex flex-row align-items-center mb-3">
+      <img class="mr-3" src="/assets/img/mony-to-city.png" alt="mony-to-city">
+      <h5 class="m-0"><span>Mony a $City:</span> 110 Mony = 1 $CITY</h5>
+    </div>
+    <p>
+      <ngb-alert [dismissible]="false" class="d-flex flex-column text-center">
+        <span>¡Importante!</span>
+        Para hacer el intercambio de $CITY a Mony y viceversa
+        (Mony a $City) tendrás que tener un saldo mínimo de 30 $CITY en tu billetera.
+      </ngb-alert>
+    </p>
+    <p>
+      Información de retiros: Se cuenta desde el primer día de inicio de sesión del usuario al juego, el primer retiro no
+      tendrá enfriamiento. El resto de los retiros se hará un retiro cada 12 días, habilitaremos un tablero de supervisión
+      del estatus para las transacciones de los retiros las cuales son:
+    </p>
+
+    <div class="row my-3">
+      <div class="col-12 col-md-6 col-lg-3">
+        <span class="badge orange">Withdrawal in<br />process</span>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <span class="badge yellow">Withdrawal under<br />supervision</span>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <span class="badge red">Withdrawal<br />canceled</span>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <span class="badge green">Approved<br />Withdrawal</span>
+      </div>
+    </div>
+
+    <p>
+      Recordemos que este sistema de estatus para el retiro se implementa para que los usuarios puedan darle
+      seguimiento y verificar su depósito en su billetera, los retiros serán totalmente descentralizados (Esto quiere
+      decir que si su retiro indica color rojo es porque tiene algún tipo de problema con la red Binance Smart Chain),
+      los demás colores las respuestas son lógicas.
+    </p>
+  </div>
+</ng-template>
 
 <app-footer></app-footer>

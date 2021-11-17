@@ -1,0 +1,72 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/theming';
+@import './theme/theme.scss';
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$website-primary: mat-palette($custom-primary);
+$website-accent: mat-palette($custom-accent, 500, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$website-warn: mat-palette($mat-red);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$website-theme: mat-light-theme((color: (primary: $website-primary,
+      accent: $website-accent,
+      warn: $website-warn,
+    )));
+
+:root {
+  --primary: #EF8F8F;
+  --accent: #EF9067;
+  --grey: #D8D5C4;
+  --secondary: #649e4d; // or any global you wish to share with components 
+}
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($website-theme);
+
+html,
+body {
+    height: 100%;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    color: #4F4F4F;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Alfa Slab One", Roboto, "Helvetica Neue", sans-serif !important;
+}
+
+.primary{
+  background-color: var(--primary);
+}
+.accent{
+  background-color: var(--accent);
+}
+.secondary{
+  background-color: var(--secondary);
+}
+.dark{
+  background-color: rgb(71, 71, 71);
+}
+.text-primary {
+  color: var(--primary) !important
+}
