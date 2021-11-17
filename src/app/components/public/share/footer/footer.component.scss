@@ -1,0 +1,46 @@
+.bg-footer {
+    background-image: url("/assets/img/bg-footer.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 619px;
+}
+footer {
+    background-color: #734223;
+    color: white;
+    .rrss a {
+        color: white;
+        margin-right: 10px;
+        fa-icon {
+            font-size: 25px;
+        }
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+    h6 {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .listLinks {
+        list-style-type: none;
+        li {
+            line-height: 2;
+            a {
+                color: white;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    background-color: #CC8C43;
+    color: black;
+    font-weight: 500;
+    a {
+        color: black;
+    }
+}

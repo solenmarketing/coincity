@@ -6,21 +6,32 @@ import { HomeComponent } from './home/home.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PublicComponent } from './public.component';
+import { RouterModule } from '@angular/router';
 
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    PublicComponent
   ],
   imports: [
     CommonModule,
     ComponentsModule,
+    RouterModule,
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    NgbModule
+    NgbModule,
+    MatSidenavModule,
+    MatListModule,
+    MatSlideToggleModule
   ]
 })
 export class PublicModule { }

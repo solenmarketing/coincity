@@ -1,0 +1,37 @@
+.navbar {
+    background-color: transparent;
+    position: relative;
+    z-index: 10;
+}
+.navlinks {
+    font-size: 15px;
+}
+.navlinks a {
+    padding: 0 10px;
+    color: white;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        color: #efbd14;
+    }
+}
+.active {
+    color: #efbd14;
+}
+
+@media screen and (max-width: 991px) {
+    .navbar {
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        min-height: 70px;
+        left: 0;
+        top: 0;
+        img {
+            width: 150px;
+        }
+    }
+    .navlinks a {
+        color: #4f4f4f;
+    }
+}

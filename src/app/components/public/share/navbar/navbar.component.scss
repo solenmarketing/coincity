@@ -1,5 +1,7 @@
 .navbar {
     background-color: transparent;
+    position: relative;
+    z-index: 10;
 }
 .navlinks {
     font-size: 15px;

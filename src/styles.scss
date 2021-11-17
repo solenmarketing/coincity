@@ -11,8 +11,8 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$website-primary: mat-palette($custom-primary);
-$website-accent: mat-palette($custom-accent, 500, A100, A400);
+$website-primary: mat-palette($custom-primary, 700);
+$website-accent: mat-palette($custom-accent, 200, A100, A400);
 
 // The warn palette is optional (defaults to red).
 $website-warn: mat-palette($mat-red);
@@ -25,10 +25,10 @@ $website-theme: mat-light-theme((color: (primary: $website-primary,
     )));
 
 :root {
-  --primary: #EF8F8F;
-  --accent: #EF9067;
+  --primary: #efbc14;
+  --accent: #51d6c2;
   --grey: #D8D5C4;
-  --secondary: #649e4d; // or any global you wish to share with components 
+  --accent: #649e4d; // or any global you wish to share with components 
 }
 
 // Include theme styles for core and each component used in your app.
@@ -61,8 +61,8 @@ h3 {
 .accent{
   background-color: var(--accent);
 }
-.secondary{
-  background-color: var(--secondary);
+.accent{
+  background-color: var(--accent);
 }
 .dark{
   background-color: rgb(71, 71, 71);

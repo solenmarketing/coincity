@@ -1,0 +1,41 @@
+<mat-toolbar class="navbar py-2 px-0">
+    <div class="container">
+        <a [routerLink]="['/']"><img src="/assets/img/logo-coin-city.png" alt="logo-coin-city"></a>
+        <div class="navlinks d-none d-lg-flex align-items-center">
+            <a [routerLink]="['/']" routerLinkActive="active">INICIO</a>
+            <a href="/#lands" routerLinkActive="active">LANDS</a>
+            <a [routerLink]="['/coincity']" routerLinkActive="active">COIN CITY</a>
+            <button mat-raised-button color="primary">WHITEPAPER</button>
+        </div>
+        <button (click)="drawer.toggle()" mat-icon-button class="example-icon d-lg-none"
+            aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+</mat-toolbar>
+
+<mat-sidenav-container class="drawer-container" style="margin-top: -70px; background-color: white;">
+    <mat-sidenav mode="over" #drawer style="margin-top: 55px; width: 200px; position: fixed" class="pt-5 d-lg-none">
+        <mat-nav-list role="list">
+            <mat-list-item mat-list-item class="clickeable" role="listitem">
+                INICIO
+            </mat-list-item>
+            <mat-list-item mat-list-item class="clickeable" role="listitem">
+                LANDS
+            </mat-list-item>
+            <mat-list-item mat-list-item class="clickeable" role="listitem">
+                COIN CITY
+            </mat-list-item>
+            <mat-list-item mat-list-item class="clickeable" role="listitem">
+                WHITEPAPER
+            </mat-list-item>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content #sidenavContent>
+
+        <router-outlet></router-outlet>
+
+        <app-footer></app-footer>
+
+    </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,8 +1,7 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { HomeComponent } from './pages/public/home/home.component';
-import { PublicComponent } from './pages/public/public.component';
-
+import { PublicComponent } from './public.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
     {
@@ -15,11 +14,10 @@ const routes: Routes = [
             }
         ]
     },
-    
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
+    imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class FeatureRoutingModule {}

@@ -1,1 +1,55 @@
-<p>footer works!</p>
+<div class="bg-footer"></div>
+<footer class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-3">
+        <a [routerLink]="['/']"><img src="/assets/img/logo-coin-city.png" alt="logo-coin-city" width="200px"></a>
+        <p>
+          Es un juego diseñado para ganar dinero a través de la construcción de tu propia ciudad.
+        </p>
+        <div class="d-flex flex-row rrss">
+          <a placement="top" ngbTooltip="Discord" href="http://" target="_blank" rel="noopener noreferrer"><fa-icon [icon]="faDiscord"></fa-icon></a>
+          <a placement="top" ngbTooltip="Twitter" href="http://" target="_blank" rel="noopener noreferrer"><fa-icon [icon]="faTwitter"></fa-icon></a>
+          <a placement="top" ngbTooltip="Instagram" href="http://" target="_blank" rel="noopener noreferrer"><fa-icon [icon]="faInstagram"></fa-icon></a>
+          <a placement="top" ngbTooltip="Facebook" href="http://" target="_blank" rel="noopener noreferrer"><fa-icon [icon]="faFacebook"></fa-icon></a>
+          <a placement="top" ngbTooltip="Youtube" href="http://" target="_blank" rel="noopener noreferrer"><fa-icon [icon]="faYoutube"></fa-icon></a>
+          <a placement="top" ngbTooltip="Twitch" href="http://" target="_blank" rel="noopener noreferrer"><fa-icon [icon]="faTwitch"></fa-icon></a>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3">
+        <h6>EXPLORA</h6>
+        <ul class="pl-0 listLinks">
+          <li><a [routerLink]="['/']">INICIO</a></li>
+          <li><a href="#lands">LANDS</a></li>
+          <li><a [routerLink]="['/']">COIN CITY</a></li>
+          <li><a [routerLink]="['/']">WHITEPAPER</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-3">
+        <h6>DE INTERÉS</h6>
+        <ul class="pl-0 listLinks">
+          <li><a [routerLink]="['/']">TÉRMINOS Y CONDICIONES</a></li>
+          <li><a [routerLink]="['/']">POLÍTICAS DE PRIVACIDAD</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-3">
+        <h6>NEWSLETTER</h6>
+        <P>
+          Suscríbete y mantente informado de nuestras
+          últimas noticias.
+        </P>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="copyright py-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <p class="m-0">
+          &copy;{{year}} - <a [routerLink]="['/']">COIN CITY</a> | Sitio web creado por <a href="https://solenmarketing.com" target="_blank" rel="noopener noreferrer">SolenMarketing</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
