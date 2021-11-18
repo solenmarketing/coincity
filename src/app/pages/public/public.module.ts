@@ -13,6 +13,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PublicComponent } from './public.component';
 import { RouterModule } from '@angular/router';
+import { DirectivesModule } from '../../directives/directives.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -31,7 +33,9 @@ import { RouterModule } from '@angular/router';
     NgbModule,
     MatSidenavModule,
     MatListModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    DirectivesModule,
+    BrowserAnimationsModule
   ]
 })
 export class PublicModule { }
