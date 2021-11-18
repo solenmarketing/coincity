@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { NgbModal, ModalDismissReasons, NgbAlertConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -12,7 +13,8 @@ export class PublicComponent implements OnInit {
 
   constructor(
     private modalService: NgbModal,
-    private alertConfig: NgbAlertConfig
+    private alertConfig: NgbAlertConfig,
+    private router: Router
   ) { }
 
   ngOnInit(): void {

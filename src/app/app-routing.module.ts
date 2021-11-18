@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { HomeComponent } from './pages/public/home/home.component';
 import { PublicComponent } from './pages/public/public.component';
 import { CoincityComponent } from './pages/public/coincity/coincity.component';
+import { TermsComponent } from './pages/public/terms/terms.component';
+import { PolicyComponent } from './pages/public/policy/policy.component';
 
 
 const routes: Routes = [
@@ -17,6 +19,14 @@ const routes: Routes = [
             {
                 path: 'coincity',
                 component: CoincityComponent
+            },
+            {
+                path: 'terminos-y-condiciones',
+                component: TermsComponent
+            },
+            {
+                path: 'politicas-de-privacidad',
+                component: PolicyComponent
             }
         ]
     }
@@ -24,7 +34,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
+    imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })],
     exports: [RouterModule]
 })
 export class AppRoutingModule { }

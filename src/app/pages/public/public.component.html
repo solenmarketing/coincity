@@ -3,7 +3,7 @@
         <a [routerLink]="['/']"><img src="/assets/img/logo-coin-city.png" alt="logo-coin-city"></a>
         <div class="navlinks d-none d-lg-flex align-items-center">
             <a [routerLink]="['/']">INICIO</a>
-            <a href="/#lands" routerLinkActive="active">LANDS</a>
+            <a href="/#lands">LANDS</a>
             <a [routerLink]="['/coincity']">COIN CITY</a>
             <a (click)="open(staking)" class="cpointer">STAKING</a>
             <button mat-raised-button color="primary">WHITEPAPER</button>
@@ -18,19 +18,16 @@
 <mat-sidenav-container class="drawer-container" style="margin-top: -70px; background-color: white;">
     <mat-sidenav mode="over" #drawer style="margin-top: 55px; width: 200px; position: fixed" class="pt-5 d-lg-none">
         <mat-nav-list role="list">
-            <mat-list-item mat-list-item class="cpointer" role="listitem">
+            <mat-list-item (click)="drawer.toggle()" [routerLink]="['/']" mat-list-item class="cpointer" role="listitem">
                 INICIO
             </mat-list-item>
-            <mat-list-item mat-list-item class="cpointer" role="listitem">
-                LANDS
-            </mat-list-item>
-            <mat-list-item mat-list-item class="cpointer" role="listitem">
+            <mat-list-item (click)="drawer.toggle()" [routerLink]="['/coincity']" mat-list-item class="cpointer" role="listitem">
                 COIN CITY
             </mat-list-item>
             <mat-list-item mat-list-item (click)="open(staking); drawer.toggle()" class="cpointer" role="listitem">
                 STAKING
             </mat-list-item>
-            <mat-list-item mat-list-item class="cpointer" role="listitem">
+            <mat-list-item (click)="drawer.toggle()" mat-list-item class="cpointer" role="listitem">
                 WHITEPAPER
             </mat-list-item>
         </mat-nav-list>

@@ -17,6 +17,8 @@ import { PublicComponent } from './public.component';
 import { RouterModule } from '@angular/router';
 import { DirectivesModule } from '../../directives/directives.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TermsComponent } from './terms/terms.component';
+import { PolicyComponent } from './policy/policy.component';
 
 
 
@@ -24,7 +26,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   declarations: [
     HomeComponent,
     PublicComponent,
-    CoincityComponent
+    CoincityComponent,
+    TermsComponent,
+    PolicyComponent
   ],
   imports: [
     CommonModule,

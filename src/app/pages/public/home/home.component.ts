@@ -8,7 +8,7 @@ import {
   transition,
   // ...
 } from '@angular/animations';
-// import * as Aos from 'aos';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

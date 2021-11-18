@@ -1,7 +1,7 @@
 <header>
   <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-6 pt-md-5">
+    <div class="row mb-separator text-center text-md-left">
+      <div class="col-12 col-md-6 pt-md-5 mb-5 mb-md-0">
         <h1 class="mb-4 cwhite">¿Qué es Coin City?</h1>
         <p class="mb-4 text-big">
           Es un juego diseñado para generar dinero a través de una inversión de capital inicial dónde también tendrás
@@ -19,17 +19,19 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-12 col-md-6" animation="fadeInLeft" duration="2000" delay="50" triggerOnce="false">
+    <div class="row text-center text-md-left" animation="fadeInUp" duration="2000" delay="50" triggerOnce="false">
+      <div class="col-12 col-md-6 d-none d-md-block">
         <img class="imgHeader2" src="/assets/img/casa-sencilla.png" alt="casa-sencilla">
       </div>
-      <div class="col-12 col-md-6 d-flex justify-content-center flex-column" animation="fadeInRight" duration="2000"
-        delay="50" triggerOnce="false">
+      <div class="col-12 col-md-6 d-flex justify-content-center flex-column">
         <h1 class="mb-4 cwhite">Comienzas como pequeño inversor</h1>
         <p class="mb-4 text-big">
           En el cual desarrollas la idea de generar arrendamientos primeramente de casas y edificios
           teniendo en cuenta los diferentes retos de la ciudad.
         </p>
+      </div>
+      <div class="col-12 col-md-6 d-block d-md-none">
+        <img class="imgHeader2" src="/assets/img/casa-sencilla.png" alt="casa-sencilla">
       </div>
     </div>
   </div>
@@ -56,7 +58,7 @@
           pasivos recibirás, tendrás una metrópolis en tus manos en la cual serás un inversionista exitoso y con honor.
         </p>
       </div>
-      <div class="col-12 col-md-3">
+      <div class="col-12 col-md-3 d-none d-md-block">
         <img src="/assets/img/obrero.png" alt="obrero">
       </div>
     </div>
@@ -72,7 +74,7 @@
     </div>
 
     <div class="row mt-5">
-      <div class="col-12 col-md-5" animation="fadeInLeft" duration="2000" delay="50" triggerOnce="false">
+      <div class="col-12 col-md-5" animation="fadeInUp" duration="2000" delay="50" triggerOnce="false">
         <h2 class="text-center text-md-left">Presente</h2>
         <p class="text-center text-md-left">
           Innovar una nueva modalidad de juego para los usuarios que ingresen a este
@@ -82,10 +84,10 @@
           creatividad. Ser los mejores en esta nueva era digital en juegos NFT.
         </p>
       </div>
-      <div class="col-12 col-md-2" animation="fadeInUp" duration="1000" delay="50" triggerOnce="false">
+      <div class="col-12 col-md-2 text-center text-md-left mb-3 mb-md-0" animation="fadeInUp" duration="1000" delay="50" triggerOnce="false">
         <img src="/assets/img/torres.png" alt="torres">
       </div>
-      <div class="col-12 col-md-5" animation="fadeInRight" duration="2000" delay="50" triggerOnce="false">
+      <div class="col-12 col-md-5" animation="fadeInUp" duration="2000" delay="50" triggerOnce="false">
         <h2 class="text-center text-md-left">Futuro</h2>
         <p class="text-center text-md-left">
           Fundamentalmente queremos innovar en el mundo GAMER, queremos evolucionar
@@ -104,15 +106,15 @@
 </section>
 
 
-<section id="tokenomics">
+<section id="tokenomics" class="mb-5">
   <div class="container">
-    <div class="row mb-150" animation="zoomIn" duration="500" delay="50" triggerOnce="false">
+    <div class="row mb-5" animation="zoomIn" duration="500" delay="50" triggerOnce="false">
       <div class="col-12">
         <h2 class="text-center">Tokenomics System</h2>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row" animation="fadeInUp" duration="500" delay="50" triggerOnce="false">
       <div class="col-12">
         <div style="overflow-x:auto;">
           <table class="table table-striped table-hover">
@@ -124,27 +126,89 @@
               </tr>
             </thead>
             <tbody>
-              <!-- <tr *ngFor="let pedido of pedidos" (click)="verPedido(pedido)" class="cpointer">
-                <td>{{pedido.data.numeroPedido}}</td>
-                <td>{{pedido.data.fechaCompra | date:'dd/MM/yy'}}</td>
-                <td *ngIf="pedido.data.tipoEntrega === 0">Retiro</td>
-                <td *ngIf="pedido.data.tipoEntrega === 1">Delivery</td>
-                <td>{{pedido.data.numeroRenglones}}</td>
-                <td>{{pedido.data.totalPagar | currency:'USD'}}</td>
-                <td>
-                  <ion-badge *ngIf="pedido.data.status == 1" color="danger" class="w-100">Por pagar</ion-badge>
-                  <ion-badge *ngIf="pedido.data.status == 2 && pedido.data.tipoEntrega === 1" color="warning" class="w-100">Por
-                    enviar
-                  </ion-badge>
-                  <ion-badge *ngIf="pedido.data.status === 2 && pedido.data.tipoEntrega === 0" color="warning" class="w-100">Por
-                    entregar
-                  </ion-badge>
-                  <ion-badge *ngIf="pedido.data.status == 3" color="tertiary" class="w-100">Enviado</ion-badge>
-                  <ion-badge *ngIf="pedido.data.status == 4" color="success" class="w-100">Entregado</ion-badge>
-                  <ion-badge *ngIf="pedido.data.status == 5" color="dark" class="w-100">Cancelado</ion-badge>
+              <tr>
+                <td class="w-100 blue">
+                  CITY Rewards and Ecosystem.
                 </td>
-              </tr> -->
-        
+                <td class="w-100">
+                  150.000.000
+                </td>
+                <td class="w-100 text-success">
+                  50%
+                </td>
+              </tr>
+              
+              <tr>
+                <td class="w-100 text-success">
+                  Presale Whitelist and Presale Public.
+                </td>
+                <td class="w-100">
+                  30.000.000
+                </td>
+                <td class="w-100 text-success">
+                  10%
+                </td>
+              </tr>
+
+              <tr>
+                <td class="w-100 text-primary">
+                  Marketing, Financial and digital advice.
+                </td>
+                <td class="w-100">
+                  30.000.000
+                </td>
+                <td class="w-100 text-success">
+                  10%
+                </td>
+              </tr>
+
+              <tr>
+                <td class="w-100 text-danger">
+                  Coin City Development TEAM.
+                </td>
+                <td class="w-100">
+                  30.000.000
+                </td>
+                <td class="w-100 text-success">
+                  10%
+                </td>
+              </tr>
+
+              <tr>
+                <td class="w-100 aqua">
+                  Staking
+                </td>
+                <td class="w-100">
+                  45.000.000
+                </td>
+                <td class="w-100 text-success">
+                  15%
+                </td>
+              </tr>
+
+              <tr>
+                <td class="w-100 lila">
+                  Tournaments and contests with the community
+                </td>
+                <td class="w-100">
+                  15.000.000
+                </td>
+                <td class="w-100 text-success">
+                  5%
+                </td>
+              </tr>
+
+              <tr>
+                <td class="w-100 orange">
+                  Total Supply
+                </td>
+                <td class="w-100">
+                  300.000.000
+                </td>
+                <td class="w-100 text-success">
+                  100%
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>

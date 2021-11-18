@@ -1,6 +1,16 @@
-@import '/src/theme/colors.scss';
-@import '/src/theme/responsive.scss';
+@import "/src/theme/colors.scss";
+@import "/src/theme/responsive.scss";
 
+@include medium {
+    .mb-separator {
+        margin-bottom: 200px !important;
+    }
+}
+@include small {
+    .mb-separator {
+        margin-bottom: 100px !important;
+    }
+}
 header {
     background-image: url("/assets/img/background-header-coin-city.png");
     background-repeat: no-repeat;
@@ -13,12 +23,16 @@ header {
 }
 header .imgHeader {
     margin-top: -100px;
-    @include medium {
-        width: 400px;
+    @include large {
+        width: 450px;
         margin-top: -70px;
     }
+    @include medium {
+        width: 350px;
+        margin-top: -30px;
+    }
     @include small {
-        margin-left: 100px;
+        margin-left: 0;
     }
     @include extraSmall {
         width: 300px;
@@ -34,11 +48,12 @@ header .imgHeader2 {
     margin-top: 100px;
     width: 500px;
     @include medium {
-        width: 400px;
+        width: 350px;
         margin-top: -70px;
     }
     @include small {
-        margin-left: 100px;
+        margin-left: 0;
+        margin-top: 0;
     }
     @include extraSmall {
         width: 300px;
@@ -68,6 +83,11 @@ header p {
         position: absolute;
         top: -300px;
     }
+    @include small {
+        width: 100%;
+         padding: 50px;
+         text-align: center;
+    }
 }
 
 section#objetivos {
@@ -75,6 +95,16 @@ section#objetivos {
     img {
         margin-left: -260px;
         margin-top: -50px;
+        @include medium {
+            width: 400px;
+            margin-left: -198px;
+            margin-top: 80px;
+        }
+        @include small {
+            width: 200px;
+            margin-left: 0;
+            margin-top: 0;
+        }
     }
 }
 
@@ -85,9 +115,30 @@ table {
 }
 th,
 td {
-    text-align: left;
-    padding: 8px;
+    text-align: center;
+    padding: 15px 8px;
 }
 table thead tr th {
-    min-width: 16.66%;
+    border: none;
+    text-transform: uppercase;
+}
+table thead tr th,
+table tbody tr td {
+    width: 16.66% !important;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f0f0f0;
+}
+
+.blue {
+    color: #2d9cdb;
+}
+.aqua {
+    color: #56ccf2;
+}
+.lila {
+    color: #9b51e0;
+}
+.orange {
+    color: #f2994a;
 }
