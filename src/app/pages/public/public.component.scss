@@ -1,3 +1,5 @@
+@import '/src/theme/colors.scss';
+
 .navbar {
     background-color: transparent;
     position: relative;
@@ -12,11 +14,11 @@
     text-decoration: none;
     &:hover {
         text-decoration: none;
-        color: #efbd14;
+        color: var(--primary)
     }
 }
 .active {
-    color: #efbd14;
+    color: var(--primary) !important;
 }
 
 @media screen and (max-width: 991px) {

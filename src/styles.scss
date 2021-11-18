@@ -3,6 +3,7 @@
 @import "~@angular/material/theming";
 @import "./theme/theme.scss";
 @import "./animated.scss";
+@import '/src/theme/colors.scss';
 
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
@@ -30,12 +31,6 @@ $website-theme: mat-light-theme(
   )
 );
 
-:root {
-  --primary: #efbc14;
-  --accent: #51d6c2;
-  --grey: #d8d5c4;
-  --accent: #649e4d; // or any global you wish to share with components
-}
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
@@ -52,13 +47,21 @@ html {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  color: #4f4f4f;
+  color: var(--dark) !important;
 }
 
 h1,
 h2,
 h3 {
   font-family: "Alfa Slab One", Roboto, "Helvetica Neue", sans-serif !important;
+}
+
+.close:focus-visible {
+    border-width: 0 !important;
+}
+
+.cpointer {
+  cursor: pointer;
 }
 
 .primary {
@@ -71,10 +74,13 @@ h3 {
   background-color: var(--accent);
 }
 .dark {
-  background-color: rgb(71, 71, 71);
+  background-color: var(--dark);
 }
 .text-primary {
   color: var(--primary) !important;
+}
+.text-dark {
+  color: var(--dark) !important;
 }
 .animated {
     visibility: visible !important;

@@ -5,6 +5,7 @@
             <a [routerLink]="['/']" routerLinkActive="active">INICIO</a>
             <a href="/#lands" routerLinkActive="active">LANDS</a>
             <a [routerLink]="['/coincity']" routerLinkActive="active">COIN CITY</a>
+            <a (click)="open(staking)" class="cpointer">STAKING</a>
             <button mat-raised-button color="primary">WHITEPAPER</button>
         </div>
         <button (click)="drawer.toggle()" mat-icon-button class="example-icon d-lg-none"
@@ -17,16 +18,19 @@
 <mat-sidenav-container class="drawer-container" style="margin-top: -70px; background-color: white;">
     <mat-sidenav mode="over" #drawer style="margin-top: 55px; width: 200px; position: fixed" class="pt-5 d-lg-none">
         <mat-nav-list role="list">
-            <mat-list-item mat-list-item class="clickeable" role="listitem">
+            <mat-list-item mat-list-item class="cpointer" role="listitem">
                 INICIO
             </mat-list-item>
-            <mat-list-item mat-list-item class="clickeable" role="listitem">
+            <mat-list-item mat-list-item class="cpointer" role="listitem">
                 LANDS
             </mat-list-item>
-            <mat-list-item mat-list-item class="clickeable" role="listitem">
+            <mat-list-item mat-list-item class="cpointer" role="listitem">
                 COIN CITY
             </mat-list-item>
-            <mat-list-item mat-list-item class="clickeable" role="listitem">
+            <mat-list-item mat-list-item (click)="open(staking); drawer.toggle()" class="cpointer" role="listitem">
+                STAKING
+            </mat-list-item>
+            <mat-list-item mat-list-item class="cpointer" role="listitem">
                 WHITEPAPER
             </mat-list-item>
         </mat-nav-list>
@@ -39,3 +43,14 @@
 
     </mat-sidenav-content>
 </mat-sidenav-container>
+
+<ng-template #staking let-modal>
+    <div class="modal-header pb-0" style="border:none">
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <mat-icon>clear</mat-icon>
+        </button>
+    </div>
+    <div class="modal-body">
+        PROXIMAMENTE
+    </div>
+</ng-template>
