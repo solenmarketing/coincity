@@ -4,6 +4,7 @@
 @import "./theme/theme.scss";
 @import "./animated.scss";
 @import '/src/theme/colors.scss';
+@import '/src/theme/responsive.scss';
 
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
@@ -55,6 +56,27 @@ h2,
 h3 {
   font-family: "Alfa Slab One", Roboto, "Helvetica Neue", sans-serif !important;
 }
+h1,
+h2 {
+    font-size: 48px !important;
+    line-height: 48px !important;
+    @include large {
+        font-size: 40px !important;
+    }
+}
+h3 {
+    font-size: 30px !important;
+    line-height: 40px !important;
+    @include extraSmall {
+        font-size: 25px !important;
+        line-height: 30px !important;
+    }
+}
+.text-big {
+    font-size: 20px !important;
+    line-height: 30px !important;
+    font-weight: 400 !important;
+}
 
 .close:focus-visible {
     border-width: 0 !important;
@@ -62,6 +84,25 @@ h3 {
 
 .cpointer {
   cursor: pointer;
+}
+
+.cwhite {
+    color: white;
+}
+.cwhite.cblack {
+    color: white;
+    @include small {
+        color: var(--dark);
+    }
+}
+.cwhiteUltraSmall {
+    @include ultraSmall {
+        color: white;
+    }
+}
+
+.mb-150 {
+  margin-bottom: 150px !important;
 }
 
 .primary {

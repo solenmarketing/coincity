@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ComponentsModule } from '../../components/components.module';
+
 import { HomeComponent } from './home/home.component';
+import { CoincityComponent } from './coincity/coincity.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
@@ -21,7 +23,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     HomeComponent,
-    PublicComponent
+    PublicComponent,
+    CoincityComponent
   ],
   imports: [
     CommonModule,

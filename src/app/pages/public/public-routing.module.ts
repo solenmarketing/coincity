@@ -5,14 +5,14 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
     {
-        path: '',
-        component: PublicComponent,
-        children: [
-            {
-                path: '',
-                component: HomeComponent
-            }
-        ]
+        // path: '',
+        // component: PublicComponent,
+        // children: [
+        //     {
+        //         path: '',
+        //         component: HomeComponent
+        //     }
+        // ]
     },
 ];
 

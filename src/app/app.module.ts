@@ -7,7 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PublicModule } from './pages/public/public.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SmooveDirective } from './directives/smoove.directive';
 
 @NgModule({
   declarations: [
