@@ -20,6 +20,9 @@ header {
     min-height: 2000px;
     margin-top: -70px;
     padding-top: 300px;
+    @include medium {
+        background-attachment: inherit;
+    }
 }
 header .imgHeader {
     margin-top: -100px;
@@ -83,9 +86,12 @@ header p {
         position: absolute;
         top: -300px;
     }
+    @include medium {
+        padding: 25px
+    }
     @include small {
         width: 100%;
-         padding: 50px;
+         padding: 25px;
          text-align: center;
     }
 }

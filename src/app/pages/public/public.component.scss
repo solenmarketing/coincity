@@ -1,4 +1,5 @@
-@import '/src/theme/colors.scss';
+@import "/src/theme/colors.scss";
+@import "/src/theme/responsive.scss";
 
 .navbar {
     background-color: transparent;
@@ -14,11 +15,31 @@
     text-decoration: none;
     &:hover {
         text-decoration: none;
-        color: var(--primary)
+        color: var(--primary);
     }
 }
 .active {
     color: var(--primary) !important;
+}
+
+#modal-staking {
+    background-image: url("/assets/img/banner-staking.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    min-height: 600px;
+    @include medium {
+        background-position: top center;
+    }
+    @include small {
+        min-height: 400px;
+        background-position: center;
+    }
+    @include extraSmall {
+        min-height: 300px;
+        background-position: top center;
+    }
 }
 
 @media screen and (max-width: 991px) {

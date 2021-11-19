@@ -43,11 +43,9 @@
 
 <ng-template #staking let-modal>
     <div class="modal-header pb-0" style="border:none">
-        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <button type="button" style="outline: none;" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
             <mat-icon>clear</mat-icon>
         </button>
     </div>
-    <div class="modal-body">
-        PROXIMAMENTE
-    </div>
+    <div id="modal-staking" class="modal-body"></div>
 </ng-template>

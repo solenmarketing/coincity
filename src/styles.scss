@@ -5,6 +5,7 @@
 @import "./animated.scss";
 @import '/src/theme/colors.scss';
 @import '/src/theme/responsive.scss';
+@import '/src/theme/fonts.scss';
 
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
@@ -54,7 +55,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Alfa Slab One", Roboto, "Helvetica Neue", sans-serif !important;
+  font-family: $font-regular, Roboto, "Helvetica Neue", sans-serif !important;
 }
 h1,
 h2 {
@@ -111,14 +112,17 @@ h3 {
 .accent {
   background-color: var(--accent);
 }
-.accent {
-  background-color: var(--accent);
-}
 .dark {
   background-color: var(--dark);
 }
 .text-primary {
   color: var(--primary) !important;
+}
+.text-secondary {
+  color: var(--secondary) !important;
+}
+.text-accent {
+  color: var(--accent) !important;
 }
 .text-success {
   color: var(--success) !important;
@@ -128,6 +132,15 @@ h3 {
 }
 .text-dark {
   color: var(--dark) !important;
+}
+.text-blue {
+  color: #052d75 !important;
+}
+.text-lila {
+  color: #5205cc !important;
+}
+.text-dorado {
+  color: #e2a100 !important;
 }
 .animated {
     visibility: visible !important;
