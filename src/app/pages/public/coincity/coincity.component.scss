@@ -133,6 +133,10 @@ table thead tr th,
 table tbody tr td {
     width: 16.66% !important;
 }
+table thead tr th:first-of-type,
+table tbody tr td:first-of-type {
+    width: 900px !important;
+}
 .table-striped tbody tr:nth-of-type(odd) {
     background-color: #f0f0f0;
 }
@@ -143,9 +147,91 @@ table tbody tr td {
 .aqua {
     color: #56ccf2;
 }
-.lila {
-    color: #9b51e0;
-}
 .orange {
     color: #f2994a;
+}
+
+/**/
+
+.timeline {
+    width: 100%;
+    height: auto;
+    position: relative;
+    .roadmap {
+        background-image: url("/assets/img/roadmap-coincity.png");
+        width: 692px;
+        height: 1798px;
+        margin: auto;
+        position: relative;
+        fa-icon {
+            font-size: 50px;
+            position: absolute;
+            &:nth-child(1) {
+                left: 50%;
+                top: 80px;
+            }
+            &:nth-child(2) {
+                left: 70%;
+                top: 491px;
+            }
+            &:nth-child(3) {
+                left: 212px;
+                top: 705px;
+            }
+            &:nth-child(4) {
+                left: 23%;
+                top: 1012px;
+            }
+            &:nth-child(5) {
+                left: 65%;
+                top: 1456px;
+            }
+        }
+    }
+    .cardRoad {
+        width: 433px;
+        height: auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0px 0px 40px 4px rgb(0 0 0 / 10%);
+        border-radius: 5px;
+        position: absolute;
+        h4 {
+            font-weight: 600;
+            font-size: 20px;
+        }
+        ul {
+            margin: 0;
+            padding: 0 0 0 20px;
+            li {
+                font-size: 15px;
+            }
+        }
+        fa-icon {
+            font-size: 50px;
+            position: absolute;
+            right: 25px;
+            top: -30px;
+        }
+        &:nth-child(2) {
+            left: 0;
+            top: 150px;
+        }
+        &:nth-child(3) {
+            right: -100px;
+            top: 500px;
+        }
+        &:nth-child(4) {
+            left: -80px;
+            top: 750px;
+        }
+        &:nth-child(5) {
+            right: 0;
+            top: 1012px;
+        }
+        &:nth-child(6) {
+            left: 0;
+            top: 1500px;
+        }
+    }
 }

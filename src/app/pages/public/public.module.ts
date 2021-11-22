@@ -19,6 +19,7 @@ import { DirectivesModule } from '../../directives/directives.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TermsComponent } from './terms/terms.component';
 import { PolicyComponent } from './policy/policy.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 
@@ -42,7 +43,8 @@ import { PolicyComponent } from './policy/policy.component';
     MatListModule,
     MatSlideToggleModule,
     DirectivesModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FontAwesomeModule
   ]
 })
 export class PublicModule { }
