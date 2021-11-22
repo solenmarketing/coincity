@@ -56,7 +56,8 @@ export class SmooveDirective {
     if (this.elOffsetTop > -100 && this.elOffsetTop < wayPoint) {
       //화면 안에 들어올 때 애니메이션 실행
       this.renderer.removeClass(this.elObj, 'wait-animation')
-      this.check = true
+      // habilitar el check para que la animacion se repita aun sin recargar la web solo de arriba hacia abajo
+      // this.check = true
     } else {
       if (this.check) {
         //한번 애니메이션이 실행된 이후에는 멈춤
@@ -98,9 +99,10 @@ export class SmooveDirective {
     }
 
     //화면 로드시 애니메이션 최초 세팅
-    if (this.elOffsetTop > this.windowH * Number(this.wayPointOffset) / 100) {
-      this.renderer.addClass(this.elObj, 'wait-animation')
-    }
+    // if (this.elOffsetTop > this.windowH * Number(this.wayPointOffset) / 100) {
+    //   this.renderer.addClass(this.elObj, 'wait-animation')
+    // }
+    this.renderer.addClass(this.elObj, 'wait-animation')
     this.renderer.addClass(this.elObj, 'animated')
     this.renderer.addClass(this.elObj, this.animationClass)
   }
