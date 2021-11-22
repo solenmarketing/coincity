@@ -50,6 +50,11 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   color: var(--dark) !important;
+  font-size: 17px !important;
+  line-height: 25px !important;
+  @include small {
+    font-size: 15px !important;
+  }
 }
 
 h1,
@@ -135,6 +140,9 @@ h3 {
 }
 .text-blue {
   color: #052d75 !important;
+}
+.text-lightgreen {
+  color: #6bfd37 !important;
 }
 .text-lila {
   color: #5205cc !important;

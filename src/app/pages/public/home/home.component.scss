@@ -18,7 +18,10 @@ header {
 header p {
     color: white;
     line-height: 25px;
-    font-size: 15px;
+    font-size: 17px;
+    @include small {
+        font-size: 15px;
+    }
 }
 
 header .imgHeader {
