@@ -1,5 +1,11 @@
 // MEDIA QUERIES
 
+@mixin superSmall {
+    @media only screen and (max-width: 389px) {
+        @content;
+    }
+}
+
 @mixin ultraSmall {
     @media only screen and (max-width: 435px) {
         @content;

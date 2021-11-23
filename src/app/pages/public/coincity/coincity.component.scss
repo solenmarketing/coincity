@@ -60,8 +60,6 @@ header .imgHeader2 {
     }
     @include extraSmall {
         width: 300px;
-        margin-left: 120px;
-        margin-top: -50px;
     }
     @include ultraSmall {
         margin: 0 auto 0 40px;
@@ -158,35 +156,15 @@ table tbody tr td:first-of-type {
     height: auto;
     position: relative;
     .roadmap {
-        background-image: url("/assets/img/roadmap-coincity.png");
-        width: 692px;
-        height: 1798px;
+        background-color: transparent;
+        background-image: url("/assets/img/roadmap-coincity-3.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        max-width: 280px;
+        height: 2008px;
         margin: auto;
         position: relative;
-        fa-icon {
-            font-size: 50px;
-            position: absolute;
-            &:nth-child(1) {
-                left: 50%;
-                top: 80px;
-            }
-            &:nth-child(2) {
-                left: 70%;
-                top: 491px;
-            }
-            &:nth-child(3) {
-                left: 212px;
-                top: 705px;
-            }
-            &:nth-child(4) {
-                left: 23%;
-                top: 1012px;
-            }
-            &:nth-child(5) {
-                left: 65%;
-                top: 1456px;
-            }
-        }
     }
     .cardRoad {
         width: 433px;
@@ -196,9 +174,34 @@ table tbody tr td:first-of-type {
         box-shadow: 0px 0px 40px 4px rgb(0 0 0 / 10%);
         border-radius: 5px;
         position: absolute;
+        @include extraSmall {
+            width: 350px;
+        }
         h4 {
             font-weight: 600;
             font-size: 20px;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                right: -119px;
+                top: 50%;
+                height: 0;
+                width: 0;
+                border-top: 50px solid transparent;
+                border-bottom: 50px solid transparent;
+                border-left: 100px solid white;
+                @include medium {
+                    display: none;
+                }
+            }
+        }
+        &:nth-child(odd) h4::after {
+            left: -120px;
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            border-right: 100px solid white;
+            border-left: none;
         }
         ul {
             margin: 0;
@@ -213,25 +216,74 @@ table tbody tr td:first-of-type {
             right: 25px;
             top: -30px;
         }
-        &:nth-child(2) {
+        &:nth-child(odd) {
+            right: 0;
+            @include medium {
+                right: 136px;
+            }
+            @include small {
+                right: 46px;
+            }
+            @include extraSmall {
+                right: 65px;
+            }
+            @include ultraSmall {
+                right: 33px;
+            }
+            @include superSmall {
+                right: 7px;
+            }
+        }
+        &:nth-child(even) {
             left: 0;
+            @include medium {
+                left: 120px;
+            }
+            @include small {
+                left: 30px;
+            }
+            @include extraSmall {
+                left: 50px;
+            }
+            @include ultraSmall {
+                left: 23px;
+            }
+            @include superSmall {
+                left: 3px;
+            }
+        }
+        &:nth-child(2) {
             top: 150px;
         }
         &:nth-child(3) {
-            right: -100px;
             top: 500px;
         }
         &:nth-child(4) {
-            left: -80px;
             top: 750px;
+            @include medium {
+                top: 900px;
+            }
         }
         &:nth-child(5) {
-            right: 0;
             top: 1012px;
+            @include medium {
+                top: 1300px;
+            }
         }
         &:nth-child(6) {
-            left: 0;
             top: 1500px;
+            @include medium {
+                top: 1700px;
+            }
         }
+    }
+}
+
+.alertRoad {
+    font-weight: 400;
+    font-size: 17px;
+    span {
+        font-weight: 700;
+        margin-bottom: 10px;
     }
 }
