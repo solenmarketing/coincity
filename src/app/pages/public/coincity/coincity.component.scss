@@ -219,37 +219,13 @@ table tbody tr td:first-of-type {
         &:nth-child(odd) {
             right: 0;
             @include medium {
-                right: 136px;
-            }
-            @include small {
-                right: 46px;
-            }
-            @include extraSmall {
-                right: 65px;
-            }
-            @include ultraSmall {
-                right: 33px;
-            }
-            @include superSmall {
-                right: 7px;
+                right: 0;
             }
         }
         &:nth-child(even) {
             left: 0;
             @include medium {
-                left: 120px;
-            }
-            @include small {
-                left: 30px;
-            }
-            @include extraSmall {
-                left: 50px;
-            }
-            @include ultraSmall {
-                left: 23px;
-            }
-            @include superSmall {
-                left: 3px;
+                left: 0;
             }
         }
         &:nth-child(2) {
