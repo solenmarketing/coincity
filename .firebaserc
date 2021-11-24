@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "coincity-ae713": {
+      "hosting": {
+        "web": [
+          "coincity-ae713"
+        ]
+      }
+    }
+  }
+}

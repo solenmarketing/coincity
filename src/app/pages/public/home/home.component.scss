@@ -2,7 +2,7 @@
 @import "/src/theme/responsive.scss";
 
 header {
-    background-image: url("/assets/img/background-header-coin-city.png");
+    background-image: url("/assets/img/background-header-coin-city-overlay.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -142,13 +142,16 @@ section#lands h2 {
     border-radius: 5px;
     padding: 20px;
     text-align: center;
-    min-height: 450px;
+    min-height: 500px;
     transform: translateY(0);
     transition: all 0.2s ease-in;
     @include medium {
         min-height: 356px;
         box-shadow: 0px 0px 10px 4px rgb(0 0 0 / 10%);
         margin-bottom: 30px;
+    }
+    p {
+        font-size: 15px;
     }
     img {
         @include large {
