@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -10,9 +11,14 @@ export class CoincityComponent implements OnInit {
 
   faMapMarkerAlt = faMapMarkerAlt
 
-  constructor() { }
+  constructor(
+    private title: Title
+  ) { }
+
+
 
   ngOnInit(): void {
+    this.title.setTitle('Conoce más sobre CoinCity')
   }
 
 }

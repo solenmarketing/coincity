@@ -8,6 +8,7 @@ import {
   transition,
   // ...
 } from '@angular/animations';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -50,13 +51,15 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private modalService: NgbModal,
-    private alertConfig: NgbAlertConfig
+    private alertConfig: NgbAlertConfig,
+    private title: Title
   ) { }
 
   ngOnInit(): void {
     // Aos.init({
     //   duration: 1200,
     // });
+    this.title.setTitle('Bienvenido a CoinCity')
   }
 
   lands() {
