@@ -22,6 +22,8 @@ import { PolicyComponent } from './policy/policy.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NotFoundComponent } from './not-found/not-found.component';
 
+import { SwiperModule } from 'swiper/angular';
+
 
 
 @NgModule({
@@ -46,7 +48,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     MatSlideToggleModule,
     DirectivesModule,
     BrowserAnimationsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    SwiperModule
   ]
 })
 export class PublicModule { }

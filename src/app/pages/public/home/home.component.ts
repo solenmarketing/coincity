@@ -9,6 +9,11 @@ import {
   // ...
 } from '@angular/animations';
 import { Title } from '@angular/platform-browser';
+// import Swiper core and required modules
+import SwiperCore, { SwiperOptions, Pagination, Autoplay } from 'swiper';
+// install Swiper modules
+SwiperCore.use([Autoplay, Pagination]);
+
 
 @Component({
   selector: 'app-home',
@@ -46,6 +51,13 @@ export class HomeComponent implements OnInit {
   @ViewChild('land') land: ElementRef | undefined
 
   closeResult = '';
+
+  public config: SwiperOptions = {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    grabCursor: true,
+    pagination: { clickable: true, dynamicMainBullets: 1, dynamicBullets: true }
+  };
 
 
 

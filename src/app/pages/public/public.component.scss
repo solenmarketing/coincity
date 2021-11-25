@@ -22,23 +22,8 @@
     color: var(--primary) !important;
 }
 
-.noticeBar {
-    background-color: rgb(255, 111, 0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 12;
-    text-align: center;
-    color: var(--dark);
-    a {
-        color: white;
-        text-decoration: underline;
-        &:hover {
-            text-decoration: none;
-            color: white;
-        }
-    }
+.mat-stroked-button {
+  border-color: var(--primary);
 }
 
 #modal-staking {

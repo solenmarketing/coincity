@@ -10,6 +10,9 @@ header {
     min-height: 2000px;
     margin-top: -70px;
     padding-top: 300px;
+    .mat-stroked-button {
+        border-color: var(--primary);
+    }
     @include medium {
         background-attachment: inherit;
     }
@@ -98,6 +101,16 @@ section#lands {
     ul li {
         @include small {
             list-style-type: none;
+        }
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }
