@@ -20,6 +20,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TermsComponent } from './terms/terms.component';
 import { PolicyComponent } from './policy/policy.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 
@@ -29,7 +30,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     PublicComponent,
     CoincityComponent,
     TermsComponent,
-    PolicyComponent
+    PolicyComponent,
+    NotFoundComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,19 @@
+@import '/src/theme/colors.scss';
+@import '/src/theme/responsive.scss';
+
+header {
+    background-image: url("/assets/img/bg-pages.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    margin-top: -70px;
+    padding-top: 250px;
+}
+
+main img {
+    width: 400px;
+    @include small {
+        width: 300px;
+    }
+}
