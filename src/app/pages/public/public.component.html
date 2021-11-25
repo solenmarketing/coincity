@@ -9,7 +9,7 @@
         <div class="navlinks d-none d-lg-flex align-items-center">
             <a [routerLink]="['/']">INICIO</a>
             <a href="/#lands">LANDS</a>
-            <a [routerLink]="['/coincity']">COIN CITY</a>
+            <a [routerLink]="['/coincity']">COINCITY</a>
             <a (click)="open(staking)" class="cpointer">STAKING</a>
             <button mat-raised-button color="primary">WHITEPAPER</button>
         </div>
@@ -27,7 +27,7 @@
                 INICIO
             </mat-list-item>
             <mat-list-item (click)="drawer.toggle()" [routerLink]="['/coincity']" mat-list-item class="cpointer" role="listitem">
-                COIN CITY
+                COINCITY
             </mat-list-item>
             <mat-list-item mat-list-item (click)="open(staking); drawer.toggle()" class="cpointer" role="listitem">
                 STAKING
