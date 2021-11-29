@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-policy',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PolicyComponent implements OnInit {
 
-  constructor() { }
+  titulo: string = 'Políticas de privacidad'
+
+  constructor(
+    private title: Title
+  ) { }
 
   ngOnInit(): void {
+    this.title.setTitle('Políticas de privacidad - CoinCity')
   }
 
 }

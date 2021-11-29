@@ -1,0 +1,88 @@
+@import "/src/theme/colors.scss";
+@import "/src/theme/responsive.scss";
+
+.gridTeam .memberTeam{
+    &:nth-child(1) .cardMember {
+        border-bottom: 5px solid #EC9D00;
+    }
+    &:nth-child(2) .cardMember {
+        border-bottom: 5px solid #27AE60;
+    }
+     &:nth-child(3) .cardMember {
+        border-bottom: 5px solid #2F80ED;
+    }
+    &:nth-child(4) .cardMember {
+        border-bottom: 5px solid #EB5757;
+    }
+     &:nth-child(5) .cardMember {
+        border-bottom: 5px solid #9B51E0;
+    }
+    &:nth-child(6) .cardMember {
+        border-bottom: 5px solid #F2994A;
+    }
+     &:nth-child(7) .cardMember {
+        border-bottom: 5px solid #00DEEC;
+    }
+    &:nth-child(8) .cardMember {
+        border-bottom: 5px solid #FF029A;
+    }
+    &:nth-child(9) .cardMember {
+        border-bottom: 5px solid #027cff;
+    }
+}
+
+.cardMember {
+    background-color: #f2f2f2;
+    position: relative;
+    padding: 98px 20px 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 100px;
+    min-height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s cubic-bezier(0.82, 0.16, 0, 1);
+    @include extraSmall {
+        text-align: left;
+    }
+    &:hover {
+        transform: translateY(-25px);
+    }
+    h4 {
+        font-weight: 700;
+        margin: 0;
+    }
+    span {
+        font-size: 15px;
+        font-style: italic;
+    }
+    p {
+        font-size: 15px;
+        line-height: 17px;
+    }
+    img {
+        position: absolute;
+        top: -70px;
+        left: calc(100% - 206px);
+        @include large {
+            left: calc(100% - 184px);
+        }
+        @include medium {
+            left: calc(100% - 245px);
+        }
+        @include small {
+            left: calc(100% - 335px);
+        }
+        @include extraSmall {
+            left: 0;
+        }
+    }
+    .rrss a {
+        margin: 0 10px;
+        color: var(--dark);
+        &:hover {
+            color: var(--primary);
+        }
+    }
+}

@@ -20,6 +20,7 @@ export class PublicComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
   open(content: any) {
     this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title', size: 'lg', centered: true, scrollable: true }).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;

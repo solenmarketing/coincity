@@ -13,6 +13,9 @@
     padding: 0 10px;
     color: white;
     text-decoration: none;
+    &.text-primary:hover, &.text-primary:focus {
+        color: var(--primary) !important;
+    }
     &:hover {
         text-decoration: none;
         color: var(--primary);

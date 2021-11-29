@@ -2,12 +2,12 @@
     <div class="container">
         <a [routerLink]="['/']"><img src="/assets/img/logo-coin-city.png" alt="logo-coin-city"></a>
         <div class="navlinks d-none d-lg-flex align-items-center">
-            <a [routerLink]="['/']">INICIO</a>
-            <a href="/#lands">LANDS</a>
-            <a [routerLink]="['/coincity']">COINCITY</a>
+            <a [routerLink]="['/inicio']" routerLinkActive="active">INICIO</a>
+            <a [routerLink]="['/coincity']" routerLinkActive="active">COINCITY</a>
+            <a [routerLink]="['/team']" routerLinkActive="active">TEAM</a>
             <a (click)="open(staking)" class="cpointer">STAKING</a>
-            <button mat-stroked-button color="primary" class="mr-2">CONTRACT</button>
-            <button mat-raised-button color="primary">WHITEPAPER</button>
+            <a href="https://bscscan.com/token/0x6c8c7c0260E1D8A882955b822748Bb797e23b526" target="_blank" mat-stroked-button color="primary" class="mr-2 text-primary">CONTRACT</a>
+            <a mat-raised-button color="primary" class="text-dark">WHITEPAPER</a>
         </div>
         <button (click)="drawer.toggle()" mat-icon-button class="example-icon d-lg-none"
             aria-label="Example icon-button with menu icon">
@@ -19,21 +19,24 @@
 <mat-sidenav-container class="drawer-container" style="margin-top: -70px; background-color: white;">
     <mat-sidenav mode="over" #drawer style="margin-top: 55px; width: 200px; position: fixed" class="pt-5 d-lg-none">
         <mat-nav-list role="list">
-            <mat-list-item (click)="drawer.toggle()" [routerLink]="['/']" mat-list-item class="cpointer" role="listitem">
+            <mat-list-item (click)="drawer.toggle()" [routerLink]="['/inicio']" routerLinkActive="active" mat-list-item role="listitem">
                 INICIO
             </mat-list-item>
-            <mat-list-item (click)="drawer.toggle()" [routerLink]="['/coincity']" mat-list-item class="cpointer" role="listitem">
+            <mat-list-item (click)="drawer.toggle()" [routerLink]="['/coincity']" routerLinkActive="active" mat-list-item role="listitem">
                 COINCITY
+            </mat-list-item>
+            <mat-list-item (click)="drawer.toggle()" [routerLink]="['/team']" routerLinkActive="active" mat-list-item role="listitem">
+                TEAM
             </mat-list-item>
             <mat-list-item mat-list-item (click)="open(staking); drawer.toggle()" class="cpointer" role="listitem">
                 STAKING
             </mat-list-item>
-            <mat-list-item (click)="drawer.toggle()" mat-list-item class="cpointer" role="listitem">
+            <a href="https://bscscan.com/token/0x6c8c7c0260E1D8A882955b822748Bb797e23b526" target="_blank" (click)="drawer.toggle()" mat-list-item class="cpointer" role="listitem">
                 CONTRACT
-            </mat-list-item>
-            <mat-list-item (click)="drawer.toggle()" mat-list-item class="cpointer" role="listitem">
+            </a>
+            <a (click)="drawer.toggle()" mat-list-item class="cpointer" role="listitem">
                 WHITEPAPER
-            </mat-list-item>
+            </a>
         </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content #sidenavContent>

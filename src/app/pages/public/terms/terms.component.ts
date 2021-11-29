@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-terms',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TermsComponent implements OnInit {
 
-  constructor() { }
+  titulo: string = 'Términos y Condiciones'
+
+  constructor(
+    private title: Title
+  ) { }
 
   ngOnInit(): void {
+    this.title.setTitle('Términos y Condiciones')
   }
 
 }

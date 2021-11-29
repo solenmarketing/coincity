@@ -23,6 +23,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 import { SwiperModule } from 'swiper/angular';
+import { TeamComponent } from './team/team.component';
 
 
 
@@ -33,7 +34,8 @@ import { SwiperModule } from 'swiper/angular';
     CoincityComponent,
     TermsComponent,
     PolicyComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    TeamComponent
   ],
   imports: [
     CommonModule,

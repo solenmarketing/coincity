@@ -5,6 +5,9 @@
     background-size: cover;
     height: 619px;
 }
+.active {
+    color: var(--primary) !important;
+}
 footer {
     background-color: #734223;
     color: white;

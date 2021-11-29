@@ -6,6 +6,7 @@ import { CoincityComponent } from './pages/public/coincity/coincity.component';
 import { TermsComponent } from './pages/public/terms/terms.component';
 import { PolicyComponent } from './pages/public/policy/policy.component';
 import { NotFoundComponent } from './pages/public/not-found/not-found.component';
+import { TeamComponent } from './pages/public/team/team.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,7 @@ const routes: Routes = [
         component: PublicComponent,
         children: [
             {
-                path: '',
+                path: 'inicio',
                 component: HomeComponent
             },
             {
@@ -28,6 +29,15 @@ const routes: Routes = [
             {
                 path: 'politicas-de-privacidad',
                 component: PolicyComponent
+            },
+            {
+                path: 'team',
+                component: TeamComponent
+            },
+            {
+                path: '',
+                pathMatch: 'full',
+                redirectTo: 'inicio'
             },
             {
                 path: '**',

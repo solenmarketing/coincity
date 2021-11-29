@@ -10,6 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderPagesComponent } from './public/share/header-pages/header-pages.component';
 
 
 
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderPagesComponent
   ],
   imports: [
     CommonModule,
@@ -31,7 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   exports: [
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderPagesComponent
   ]
 })
 export class ComponentsModule { }

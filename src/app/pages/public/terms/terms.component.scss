@@ -1,15 +1,4 @@
-@import '/src/theme/colors.scss';
-@import '/src/theme/responsive.scss';
 
-header {
-    background-image: url("/assets/img/bg-pages-overlay.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 400px;
-    margin-top: -70px;
-    padding-top: 250px;
-}
 .text-bold {
     font-weight: 600;
 }
