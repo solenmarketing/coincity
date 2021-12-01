@@ -11,6 +11,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatDividerModule } from '@angular/material/divider';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PublicComponent } from './public.component';
@@ -51,7 +53,9 @@ import { TeamComponent } from './team/team.component';
     DirectivesModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
-    SwiperModule
+    SwiperModule,
+    MatMenuModule,
+    MatDividerModule
   ]
 })
 export class PublicModule { }

@@ -2,20 +2,13 @@
 <footer class="py-5">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-4 mb-3 mb-md-0 text-center text-lg-left">
+      <div class="col-12 col-lg-3 mb-3 mb-md-0 text-center text-lg-left">
         <a [routerLink]="['/']"><img src="/assets/img/logo-coin-city.png" alt="logo-coin-city" width="200px"></a>
         <p>
           Es un juego diseñado para ganar dinero a través de la construcción de tu propia ciudad.
         </p>
-        <div class="d-flex flex-row rrss justify-content-center justify-content-md-start">
-          <a placement="top" ngbTooltip="Discord" href="http://" target="_blank" rel="noopener noreferrer"><fa-icon [icon]="faDiscord"></fa-icon></a>
-          <a placement="top" ngbTooltip="Twitter" href="http://" target="_blank" rel="noopener noreferrer"><fa-icon [icon]="faTwitter"></fa-icon></a>
-          <a placement="top" ngbTooltip="Instagram" href="http://" target="_blank" rel="noopener noreferrer"><fa-icon [icon]="faInstagram"></fa-icon></a>
-          <a placement="top" ngbTooltip="Facebook" href="http://" target="_blank" rel="noopener noreferrer"><fa-icon [icon]="faFacebook"></fa-icon></a>
-          <a placement="top" ngbTooltip="Telegram" href="https://t.me/joinchat/Xq1zXzRXCFM2MDUx" target="_blank" rel="noopener noreferrer"><fa-icon [icon]="faTelegram"></fa-icon></a>
-        </div>
       </div>
-      <div class="col-12 col-lg-4 mb-3 mb-md-0 text-center text-lg-left">
+      <div class="col-12 col-lg-3 mb-3 mb-md-0 text-center text-lg-left">
         <h6>EXPLORA</h6>
         <ul class="pl-0 listLinks">
           <li><a [routerLink]="['/inicio']" routerLinkActive="active">INICIO</a></li>
@@ -25,20 +18,30 @@
           <li><a [routerLink]="['/']">WHITEPAPER</a></li>
         </ul>
       </div>
-      <div class="col-12 col-lg-4 mb-3 mb-md-0 text-center text-lg-left">
+      <div class="col-12 col-lg-3 mb-3 mb-md-0 text-center text-lg-left">
         <h6>DE INTERÉS</h6>
         <ul class="pl-0 listLinks">
           <li><a [routerLink]="['/terminos-y-condiciones']" routerLinkActive="active">TÉRMINOS Y CONDICIONES</a></li>
           <li><a [routerLink]="['/politicas-de-privacidad']" routerLinkActive="active">POLÍTICAS DE PRIVACIDAD</a></li>
         </ul>
       </div>
-      <!-- <div class="col-12 col-lg-3 mb-3 mb-md-0 text-center text-lg-left">
-        <h6>NEWSLETTER</h6>
-        <P>
-          Suscríbete y mantente informado de nuestras
-          últimas noticias.
-        </P>
-      </div> -->
+      <div class="col-12 col-lg-3 mb-3 mb-md-0 text-center text-lg-left">
+        <h6>INFÓRMATE EN</h6>
+        <div class="d-flex flex-row rrss justify-content-center justify-content-md-start">
+          <a placement="bottom" ngbTooltip="Discord" href="https://discord.gg/hTxUxRKg7Y" target="_blank">
+            <fa-icon [icon]="faDiscord"></fa-icon>
+          </a>
+          <a placement="bottom" ngbTooltip="Twitter" href="https://twitter.com/CoinCityFarm" target="_blank">
+            <fa-icon [icon]="faTwitter"></fa-icon>
+          </a>
+          <a placement="bottom" ngbTooltip="Instagram" href="https://instagram.com/coincityfarm" target="_blank">
+            <fa-icon [icon]="faInstagram"></fa-icon>
+          </a>
+          <a placement="bottom" ngbTooltip="Telegram" href="https://t.me/Coincityfarm" target="_blank">
+            <fa-icon [icon]="faTelegram"></fa-icon>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </footer>
@@ -47,7 +50,7 @@
     <div class="row">
       <div class="col-12 text-center">
         <p class="m-0">
-          &copy;{{year}} - <a [routerLink]="['/']">COINCITY</a> | Sitio web creado por <a href="https://solenmarketing.com" target="_blank" rel="noopener noreferrer">SolenMarketing</a>
+          &copy;{{year}} - <a [routerLink]="['/']">COINCITY</a> | Sitio web creado por <a href="https://solenmarketing.com" target="_blank">SolenMarketing</a>
         </p>
       </div>
     </div>

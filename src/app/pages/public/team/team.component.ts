@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { faInstagram, faFacebook, faTwitch, faTwitter, faGithub, faLinkedin  } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faFacebook, faTwitch, faTwitter, faGithub, faLinkedin, faYoutube  } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe  } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -18,6 +18,7 @@ export class TeamComponent implements OnInit {
   faTwitter = faTwitter;
   faGithub = faGithub;
   faLinkedin = faLinkedin;
+  faYoutube = faYoutube;
 
   constructor(
     private title: Title

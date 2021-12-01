@@ -13,7 +13,8 @@
     padding: 0 10px;
     color: white;
     text-decoration: none;
-    &.text-primary:hover, &.text-primary:focus {
+    &.text-primary:hover,
+    &.text-primary:focus {
         color: var(--primary) !important;
     }
     &:hover {
@@ -21,12 +22,19 @@
         color: var(--primary);
     }
 }
+.mat-list-item-disabled {
+    background-color: transparent;
+}
+.linkWhitepaper:hover {
+    color: var(--dark) !important;
+    text-decoration: none !important;
+}
 .active {
     color: var(--primary) !important;
 }
 
 .mat-stroked-button {
-  border-color: var(--primary);
+    border-color: var(--primary);
 }
 
 #modal-staking {

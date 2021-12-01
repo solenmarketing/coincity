@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgbModal, ModalDismissReasons, NgbAlertConfig } from '@ng-bootstrap/ng-bootstrap';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-public',
@@ -10,6 +11,8 @@ import { NgbModal, ModalDismissReasons, NgbAlertConfig } from '@ng-bootstrap/ng-
 export class PublicComponent implements OnInit {
 
   closeResult = '';
+
+  faAngleRight = faAngleRight
 
   constructor(
     private modalService: NgbModal,

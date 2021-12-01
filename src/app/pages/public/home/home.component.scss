@@ -12,6 +12,9 @@ header {
     padding-top: 300px;
     .mat-stroked-button {
         border-color: var(--primary);
+        &:hover {
+            text-decoration: none;
+        }
     }
     @include medium {
         background-attachment: inherit;
