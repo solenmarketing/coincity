@@ -4,195 +4,42 @@
   <div class="container">
 
     <div class="row gridTeam">
-      <div class="col-12 col-md-6 col-lg-3 memberTeam">
+      <div class="col-12 col-md-6 col-lg-3 memberTeam" *ngFor="let member of members">
         <div class="cardMember">
-          <img src="/assets/img/danny-marquez.png" alt="danny marquez">
-          <h4>Danny Márquez</h4>
-          <span>CEO - Chief Executive Officer</span>
+          <img [src]="member.img" [alt]="member.name">
+          <h4>{{ member.name }}</h4>
+          <span>{{ member.job }}</span>
           <div class="rrss">
-            <a placement="top" ngbTooltip="Instagram" href="http://" target="_blank" rel="noopener noreferrer">
+            <a *ngIf="member.ig !== ''" placement="top" ngbTooltip="Instagram" [href]="member.ig" target="_blank">
               <fa-icon [icon]="faInstagram"></fa-icon>
             </a>
-            <a placement="top" ngbTooltip="Facebook" href="http://" target="_blank" rel="noopener noreferrer">
+            <a *ngIf="member.fb !== ''" placement="top" ngbTooltip="Facebook" [href]="member.fb" target="_blank">
               <fa-icon [icon]="faFacebook"></fa-icon>
             </a>
-          </div>
-          <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, blanditiis.</p>
-        </div>
-      </div>
-      <!-- CARD MEMBER -->
-
-      <div class="col-12 col-md-6 col-lg-3 memberTeam">
-        <div class="cardMember">
-          <img src="/assets/img/daniel-rodriguez.png" alt="daniel rodriguez">
-          <h4>Daniel Rodríguez</h4>
-          <span>Developer BlockChain</span>
-          <div class="rrss">
-            <a placement="top" ngbTooltip="Github" href="https://github.com/drg809" target="_blank" rel="noopener noreferrer">
-              <fa-icon [icon]="faGithub"></fa-icon>
-            </a>
-            <a placement="top" ngbTooltip="Linkedin" href="https://es.linkedin.com/in/daniel-rodr%C3%ADguez-garc%C3%ADa-003ba4213" target="_blank" rel="noopener noreferrer">
+            <a *ngIf="member.lin !== ''" placement="top" ngbTooltip="Linkedin" [href]="member.lin" target="_blank">
               <fa-icon [icon]="faLinkedin"></fa-icon>
             </a>
-          </div>
-          <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, blanditiis.</p>
-        </div>
-      </div>
-      <!-- CARD MEMBER -->
-
-      <div class="col-12 col-md-6 col-lg-3 memberTeam">
-        <div class="cardMember">
-          <img src="/assets/img/gerardo-scollo.png" alt="gerardo scollo">
-          <h4>Gerardo Scollo</h4>
-          <span>CMO - Chief Marketing Officer</span>
-          <div class="rrss">
-            <a placement="top" ngbTooltip="Instagram" href="http://" target="_blank" rel="noopener noreferrer">
-              <fa-icon [icon]="faInstagram"></fa-icon>
-            </a>
-            <a placement="top" ngbTooltip="Facebook" href="http://" target="_blank" rel="noopener noreferrer">
-              <fa-icon [icon]="faFacebook"></fa-icon>
-            </a>
-          </div>
-          <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, blanditiis.</p>
-        </div>
-      </div>
-      <!-- CARD MEMBER -->
-
-      <div class="col-12 col-md-6 col-lg-3 memberTeam">
-        <div class="cardMember">
-          <img src="/assets/img/juan-molina.png" alt="juan molina">
-          <h4>Juan Molina</h4>
-          <span>CCO - Chief Comunnications Officer</span>
-          <div class="rrss">
-            <a placement="top" ngbTooltip="Instagram" href="http://" target="_blank" rel="noopener noreferrer">
-              <fa-icon [icon]="faInstagram"></fa-icon>
-            </a>
-            <a placement="top" ngbTooltip="Facebook" href="http://" target="_blank" rel="noopener noreferrer">
-              <fa-icon [icon]="faFacebook"></fa-icon>
-            </a>
-          </div>
-          <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, blanditiis.</p>
-        </div>
-      </div>
-      <!-- CARD MEMBER -->
-
-      <div class="col-12 col-md-6 col-lg-3 memberTeam">
-        <div class="cardMember">
-          <img src="/assets/img/leonardo-perez.png" alt="leonardo perez">
-          <h4>Leonardo Pérez</h4>
-          <span>CTO - Chief Technical Officer</span>
-          <div class="rrss">
-            <a placement="top" ngbTooltip="Instagram" href="https://instagram.com/leo.lopez.338?utm_medium=copy_link" target="_blank" rel="noopener noreferrer">
-              <fa-icon [icon]="faInstagram"></fa-icon>
-            </a>
-            <a placement="top" ngbTooltip="Twitter" href="https://twitter.com/Leonard15429055?t=v5UXqezTJvv-Nlfd49yFgA&s=09" target="_blank" rel="noopener noreferrer">
+            <a *ngIf="member.twt !== ''" placement="top" ngbTooltip="Twitter" [href]="member.twt" target="_blank">
               <fa-icon [icon]="faTwitter"></fa-icon>
             </a>
-          </div>
-          <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, blanditiis.</p>
-        </div>
-      </div>
-      <!-- CARD MEMBER -->
-
-      <div class="col-12 col-md-6 col-lg-3 memberTeam">
-        <div class="cardMember">
-          <img src="/assets/img/luis-ramirez.png" alt="luis ramirez">
-          <h4>Luis Ramírez</h4>
-          <span>Graphic designer and illustrator</span>
-          <div class="rrss">
-            <a placement="top" ngbTooltip="Instagram" href="https://www.instagram.com/lrgrafico/" target="_blank" rel="noopener noreferrer">
-              <fa-icon [icon]="faInstagram"></fa-icon>
-            </a>
-            <a placement="top" ngbTooltip="Facebook" href="https://www.facebook.com/LRgrafico-107678308214348" target="_blank" rel="noopener noreferrer">
-              <fa-icon [icon]="faFacebook"></fa-icon>
-            </a>
-          </div>
-          <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, blanditiis.</p>
-        </div>
-      </div>
-      <!-- CARD MEMBER -->
-
-      <div class="col-12 col-md-6 col-lg-3 memberTeam">
-        <div class="cardMember">
-          <img src="/assets/img/martin-leiva.png" alt="martin leiva">
-          <h4>Martin Leiva</h4>
-          <span>COO - Chief Operating Officer</span>
-          <div class="rrss">
-            <a placement="top" ngbTooltip="Instagram" href="http://" target="_blank" rel="noopener noreferrer">
-              <fa-icon [icon]="faInstagram"></fa-icon>
-            </a>
-            <a placement="top" ngbTooltip="Facebook" href="http://" target="_blank"
-              rel="noopener noreferrer">
-              <fa-icon [icon]="faFacebook"></fa-icon>
-            </a>
-          </div>
-          <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, blanditiis.</p>
-        </div>
-      </div>
-      <!-- CARD MEMBER -->
-
-      <div class="col-12 col-md-6 col-lg-3 memberTeam">
-        <div class="cardMember">
-          <img src="/assets/img/romano-stallocca.png" alt="romano stallocca">
-          <h4>Romano Stallocca</h4>
-          <span>CDO - Chief Digital Officer</span>
-          <div class="rrss">
-            <a placement="top" ngbTooltip="Instagram" href="https://www.instagram.com/romanostallocca/" target="_blank" rel="noopener noreferrer">
-              <fa-icon [icon]="faInstagram"></fa-icon>
-            </a>
-            <a placement="top" ngbTooltip="Twitch" href="https://www.twitch.tv/FuryusARG" target="_blank" rel="noopener noreferrer">
+            <a *ngIf="member.twc !== ''" placement="top" ngbTooltip="Twitch" [href]="member.twc" target="_blank">
               <fa-icon [icon]="faTwitch"></fa-icon>
             </a>
-          </div>
-          <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, blanditiis.</p>
-        </div>
-      </div>
-      <!-- CARD MEMBER -->
-
-      <div class="col-12 col-md-6 col-lg-3 memberTeam">
-        <div class="cardMember">
-          <img src="/assets/img/solenmarketing.png" alt="solenmarketing">
-          <h4>SolenMarketing</h4>
-          <span>Diseño y Desarrollo Web</span>
-          <div class="rrss">
-            <a placement="top" ngbTooltip="Instagram" href="https://instagram.com/solenmarketing/" target="_blank" rel="noopener noreferrer">
-              <fa-icon [icon]="faInstagram"></fa-icon>
+            <a *ngIf="member.git !== ''" placement="top" ngbTooltip="Github" [href]="member.git" target="_blank">
+              <fa-icon [icon]="faGithub"></fa-icon>
             </a>
-            <a placement="top" ngbTooltip="Facebook" href="https://facebook.com/solenmarketing" target="_blank" rel="noopener noreferrer">
-              <fa-icon [icon]="faFacebook"></fa-icon>
+            <a *ngIf="member.ytb !== ''" placement="top" ngbTooltip="Youtube" [href]="member.ytb" target="_blank">
+              <fa-icon [icon]="faYoutube"></fa-icon>
             </a>
-            <a placement="top" ngbTooltip="Website" href="https://solenmarketing.com" target="_blank">
+            <a *ngIf="member.web !== ''" placement="top" ngbTooltip="Website" [href]="member.web" target="_blank">
               <fa-icon [icon]="faGlobe"></fa-icon>
             </a>
           </div>
-          <p class="mb-0">Un sitio web exitoso es el resultado del equilibrio entre tecnologías y conocimiento.</p>
+          <p class="mb-0">{{ member.comment }}</p>
         </div>
       </div>
       <!-- CARD MEMBER -->
 
-      <div class="col-12 col-md-6 col-lg-3 memberTeam">
-        <div class="cardMember">
-          <img src="/assets/img/nicolas-gonzalez.png" alt="nicolas gonzalez">
-          <h4>Nicolás González</h4>
-          <span>Developer Game</span>
-          <div class="rrss">
-            <a placement="top" ngbTooltip="Youtube" href="https://www.youtube.com/channel/UCgWR3_4ngTCgGSrDy0hZbag" target="_blank"
-              rel="noopener noreferrer">
-              <fa-icon [icon]="faYoutube"></fa-icon>
-            </a>
-            <a placement="top" ngbTooltip="Twitter" href="https://twitter.com/godofredohh" target="_blank"
-              rel="noopener noreferrer">
-              <fa-icon [icon]="faTwitter"></fa-icon>
-            </a>
-            <a placement="top" ngbTooltip="Twitch" href="https://www.twitch.tv/godofredohhdev" target="_blank"
-              rel="noopener noreferrer">
-              <fa-icon [icon]="faTwitch"></fa-icon>
-            </a>
-          </div>
-          <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, distinctio?</p>
-        </div>
-      </div>
-      <!-- CARD MEMBER -->
     </div>
   </div>
 </main>
