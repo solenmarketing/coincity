@@ -8,7 +8,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class TermsComponent implements OnInit {
 
-  titulo: string = 'Términos y Condiciones'
+  titulo: string = 'Términos y Condiciones - CoinCity'
 
   constructor(
     private title: Title

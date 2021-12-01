@@ -71,7 +71,7 @@ export class HomeComponent implements OnInit {
     // Aos.init({
     //   duration: 1200,
     // });
-    this.title.setTitle('Bienvenido a CoinCity')
+    this.title.setTitle('CoinCity | NFT Play to Earn Game | Join Now!')
   }
 
   lands() {
